@@ -4,7 +4,6 @@ output: html_document
 date: '2022-07-21'
 ---
 
-<!-- Add intro text -->
 We are using the ready4 software framework to implement multiple transparent, reusable and updatable CHEMs in youth mental health (see Figure \@ref(fig:fig1)).  Some initial outputs from this work are publicly available as development version releases.
 
 ```{r, child = child_figs_ls$fig1, echo=FALSE}

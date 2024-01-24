@@ -9,9 +9,11 @@ output: html_document
 ```{r echo=FALSE}
 if(params$X@tables_in_body_lgl){
   child_docs_ls <- list(one = "../Child_RMDs/MS_Tables_1.Rmd",
-                        two = "../Child_RMDs/MS_Tables_2.Rmd",
-                        three = "../Child_RMDs/MS_Tables_3.Rmd",
-                        four = "../Child_RMDs/MS_Tables_4.Rmd")
+                        two = "../Child_RMDs/MS_Tables_2.Rmd"
+                        # ,
+                        # three = "../Child_RMDs/MS_Tables_3.Rmd",
+                        # four = "../Child_RMDs/MS_Tables_4.Rmd"
+                        )
 }else{
     child_docs_ls <- list(one = NULL,
                           two = NULL,

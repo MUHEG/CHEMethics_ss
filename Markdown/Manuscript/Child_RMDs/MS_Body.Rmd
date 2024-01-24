@@ -38,12 +38,12 @@ output: html_document
 ```{r child="../Child_RMDs/MS_Conclusion.Rmd", echo=FALSE}
 ```
 
-## Acknowledgement {-}
-The authors would like to acknowledge the contribution of John Gillam who provided advisory input to this research.
+<!-- ## Acknowledgement {-} -->
+<!-- The authors would like to acknowledge the contribution of John Gillam who provided advisory input to this research. -->
 
-## Availability of data and materials {-#availability-of-data-and-materials}
-```{r child="../Child_RMDs/MS_Available_Data_And_Resources.Rmd", echo=FALSE}
-```
+<!-- ## Availability of data and materials {-#availability-of-data-and-materials} -->
+<!-- # ```{r child="../Child_RMDs/MS_Available_Data_And_Resources.Rmd", echo=FALSE} -->
+<!-- # ``` -->
 
 ## Ethics approval {-}
 ```{r child="../Child_RMDs/MS_Ethics.Rmd", echo=FALSE}

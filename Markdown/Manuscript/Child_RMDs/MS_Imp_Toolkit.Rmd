@@ -7,8 +7,6 @@ date: '2022-07-21'
 To support the development of CHEMs that meet TRU assessment criteria, we have created a prototype software framework called ready4. The software framework aims to provide a toolkit for: (i) enabling modular implementation of CHEMs; (ii) authoring and documenting CHEM modules; (iii) managing the labelling and transfer of CHEM input and output data; and (iv) authoring reproducible analyses that apply CHEMs to compatible data.
 
 To achieve these goals, we have implemented the software framework as R [@RCORE2022] code libraries that integrate with a number of online services and which are supported by a documentation website.
-<!-- We have designed this framework to enable ethical computational implementations of health economic models that are both open-source (for transparency and reusability) and modular (for reusability and updatability). The framework aims to support the standardization and interoperability that are core enablers of implementing a modular and open source approaches.  -->
- 
 
 ## R libraries 
 A library in the R language will typically depend on multiple other R libraries, all of which potentially have different authors. As the number of third-party dependencies of an R library grows so does the fragility of that library (e.g., the library may cease to work as intended due to changes in one of its dependency libraries). To reduce the fragility of our framework we implemented it as multiple R libraries rather than one R library. In total we authored six novel R libraries to implement the ready4 framework, all of which have distinct purposes and dependencies (Table \@ref(tab:cpkgs)).
@@ -25,16 +23,6 @@ Three framework libraries are designed to help streamline and standardise workfl
 
 -	quality assured (each update triggers continuous integration workflows, including any acceptance and unit tests created by module library authors).
 
-<!-- Functions to implement model algorithms can be associated with a module via . -->
-
-<!-- to provide tools for authoring CHEMs, supplying those CHEMs with data and using CHEMs to implement reproducible modelling analyses. -->
-
-<!-- The ready4pack library depends on two other module authoring libraries. <!-- MOVED CONTENT -->
-
-<!-- Each CHEM module authored with the ready4 framework will include both a data structure (specifying the required properties of data that can validly be supplied to a module) and a set of algorithms (specifying the operations that can be performed on data contained in a module instance). -->
-
-<!-- development version -->
-
 A library for *managing CHEM data* contains tools for supplying CHEM modules with input data ingested from local (i.e., a user's computer) or remote (online repositories) locations, labelling CHEM module datasets and exporting CHEM module data to online repositories. A library for *authoring reproducible analyses* contains tools to help write programs that apply CHEM modules to compatible datasets for the purpose of undertaking health economic analyses. These analysis programs can be either self-documenting (code is integrated with plain English explanations of what it does) or trigger the creation of explanatory documents (e.g., a scientific manuscript).
 
 ```{r, child = child_docs_ls$three, echo=FALSE}
@@ -42,7 +30,6 @@ A library for *managing CHEM data* contains tools for supplying CHEM modules wit
 
 ##	Online services 
 Framework libraries are designed to be used in conjunction with a number of third-party online services that we established and configured accounts with. 
-<!-- To facilitate its application to our youth mental health project, we established and configured accounts with these required services (see Availability of data and materials). -->
 
 We created a GitHub organisation (a collection of code repositories) where source code that we author is stored and version controlled. We configured individual repositories in our GitHub organisation to implement continuous integration. By default, code libraries authored with our framework will use continuous integration to assess compliance with policies specified by the Comprehensive R Archive Network (CRAN) [@CRAN2022]. To track our code coverage, we linked our GitHub organisation to an account we established at codecov [@codecov_2022]. To facilitate the creation and hosting of documentation websites, we enabled GitHub Pages in each repository used for code library development. 
 

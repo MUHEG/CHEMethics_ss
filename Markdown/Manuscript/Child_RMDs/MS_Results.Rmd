@@ -5,17 +5,17 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-# Ethical issues
+<!-- # Ethical issues -->
 ```{r child="../Child_RMDs/MS_Imp_Guidelines.Rmd", echo=FALSE}
 ```
 
-# Prototype software framework
-```{r child="../Child_RMDs/MS_Imp_Toolkit.Rmd", echo=FALSE}
-```
+<!-- # Prototype software framework -->
+<!-- ```{r child="../Child_RMDs/MS_Imp_Toolkit.Rmd", echo=FALSE} -->
+<!-- ``` -->
 
-# Application in youth mental health
-```{r child="../Child_RMDs/MS_Imp_Example.Rmd", echo=FALSE}
-```
+<!-- # Application in youth mental health -->
+<!-- ```{r child="../Child_RMDs/MS_Imp_Example.Rmd", echo=FALSE} -->
+<!-- ``` -->
 
 
 

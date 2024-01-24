@@ -4,6 +4,47 @@ output: html_document
 date: "2023-04-18"
 ---
 
+
+<!-- . The authors of that framework propose 13 questions to evaluate ethical risk across the four criteria of  -->
+<!-- . However, while our six assessment criteria are specific to three attributes (TRU) of the computational implementation of the model, the prior ethical framework includes questions relevant to the conceptual and mathematical models and the potential impacts of model use. Examples of these more general evaluation questions include (for the justice criterion) “is any lack of knowledge about important parameters attributable to uncertainty or variability?” and (for the beneficence criterion) “if a policy is based on the model evidence, is it more likely to be effective and beneficial than a decision made in the absence of the model?”.  -->
+
+<!-- Multiple ethical considerations of computational modeling have previously been identified [@10.3389/fpubh.2017.00068; @pliakos2021ethics; @thompson2022escape; @calder2018computational],  -->
+
+<!-- For example, to reduce the risk of inequitable policy implementation, it may be important for of a model to predict the benefits of harms of an intervention for different sub-populations [@10.3389/fpubh.2017.00068], but model developers may prefer to allocate a project budget to implementing other model features [@thompson2022escape]. -->
+
+<!-- Reuse of models as components of other models can also make model implementation more efficient [@Arnold2010; @garcia2021cost] but the reusability of models is significantly shaped by computational implementation choices such as how model code and data are authored, documented, licensed and disseminated.  -->
+
+<!-- Common barriers to model re-use include commercial and legal considerations [@Feenstra2022; @Pouwels2022], as well as challenges related to model transferability across jurisdictions [@garcia2021cost]. -->
+
+<!-- Compared to using commercial modelling software, authoring CHEMs in an open-source language like R [@RCORE2022] makes it easier to -->
+<!-- Using open-source development platforms and licenses can aid both generalizability and transferability. -->
+<!-- The choices that CHEM developers make about model implementation and licensing will also shape who can use a model and for what purposes.  -->
+<!-- are relatively easier to selectively modify. -->
+
+<!-- Currently, the core development team for a CHEM will be typically be funded to produce a project end-point deliverable whose specifications are well defined early in the project. For more complex and multi-purpose CHEMs, particularly those designed to be incorporated into decision support systems, it may be better for development teams to adopt Agile Software Development [@beck2001manifesto], an approach that has been recommended for complex public health software projects [@10.3389/fpubh.2022.899874]. An Agile model will be less clearly specified in the initial project plan, but will instead continually develop in response to the requirements and feedback of users, who are provided with an initial, simplified working version of the model at the earliest feasible opportunity. -->
+
+<!-- that have the potential to be met with the assistance of software frameworks -->
+
+<!-- We have designed this framework to enable ethical computational implementations of health economic models that are both open-source (for transparency and reusability) and modular (for reusability and updatability). The framework aims to support the standardization and interoperability that are core enablers of implementing a modular and open source approaches.  -->
+
+<!-- Functions to implement model algorithms can be associated with a module via . -->
+
+<!-- to provide tools for authoring CHEMs, supplying those CHEMs with data and using CHEMs to implement reproducible modelling analyses. -->
+
+<!-- The ready4pack library depends on two other module authoring libraries. <!-- MOVED CONTENT -->
+
+<!-- Each CHEM module authored with the ready4 framework will include both a data structure (specifying the required properties of data that can validly be supplied to a module) and a set of algorithms (specifying the operations that can be performed on data contained in a module instance). -->
+
+<!-- development version -->
+
+<!-- To facilitate its application to our youth mental health project, we established and configured accounts with these required services (see Availability of data and materials). -->
+
+<!-- Talk about DARTH (https://doi.org/10.1007/s40273-019-00837-x )/ BCEA -->
+
+<!-- The less numerous and more focused assessment criteria we propose may potentially be more tractable to implement in reviews of models authored by third parties and as the basis for designing software frameworks to support ethical computational model implementation. -->
+
+<!-- Two issues for funders - allow support for beneficial use, foster viable communities. -->
+
 #################################
 
 Computational models, particularly those addressing economic topics, have become essential tools for health policy development [@dakin2015influence; @Erdemir2020]. Although influential and widely used, health economic models typically have a number of limitations that at best restrict their usefulness and which in some cases may facilitate harmful misuse.

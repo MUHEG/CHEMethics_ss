@@ -6,16 +6,22 @@ output: html_document
 ---
 
 \newpage
-`r if(!is.null(child_tabs_1L_chr)){"## Tables and figures {-}"}`
+<!-- `r if(!is.null(child_tabs_1L_chr)){"## Tables {-}"}` -->
+
+<!-- and figures -->
 
 ```{r, child = '../Child_RMDs/MS_Tables_1.Rmd', echo=FALSE}
 ```
+
 \newpage
+
 ```{r, child = '../Child_RMDs/MS_Tables_2.Rmd', echo=FALSE}
 ```
+
 \newpage
-```{r, child = '../Child_RMDs/MS_Tables_3.Rmd', echo=FALSE}
-```
-\newpage
-```{r, child = '../Child_RMDs/MS_Tables_4.Rmd', echo=FALSE}
-```
+
+<!-- # ```{r, child = '../Child_RMDs/MS_Tables_3.Rmd', echo=FALSE} -->
+<!-- # ``` -->
+<!-- # \newpage -->
+<!-- # ```{r, child = '../Child_RMDs/MS_Tables_4.Rmd', echo=FALSE} -->
+<!-- # ``` -->

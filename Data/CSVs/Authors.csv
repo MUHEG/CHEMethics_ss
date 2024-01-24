@@ -1,13 +1,7 @@
 first_nm_chr,middle_nm_chr,last_nm_chr,title_chr,qualifications_chr,institute_chr,sequence_int,is_corresponding_lgl,email_chr,is_equal_first_lgl
 Matthew,Philip,Hamilton,Mr,"""BBS, MSC""","""Monash, Orygen""",1,TRUE,matthew.hamilton1@monash.edu,FALSE
-Caroline,X,Gao,Dr,"""BEng, MBiostatistics, PhD""","""Orygen, CYMH, Monash""",2,FALSE,caroline.gao@orygen.org.au,FALSE
-Glen,,Wiesner,Dr,"""PhD""","""HF""",3,FALSE,glen.wiesner@heartfoundation.org.au,FALSE
-Kate,Maree,Filia,Dr,"""BAppSci, PGradDip, PhD""","""Orygen, CYMH""",5,FALSE,kate.filia@orygen.org.au,FALSE
-Jana,Marcelle,Menssink,Dr,"""BA, PGDipPsych, Dpsych""","""Orygen, CYMH""",6,FALSE,jana.menssink@orygen.org.au,FALSE
-Petra,,Plencnerova,Dr,"""BSc, MSc, PhD""","""Headspace""",7,FALSE,pplencnerova@headspace.org.au,FALSE
-David,,Baker,Mr,“CHECK QUALS”,"""Orygen, CYMH""",8,FALSE,david.baker@orygen.org.au,FALSE
-Patrick,Dennistoun,McGorry,Prof,"""MD, BS, PhD, FRCP, FRANZCP, FAA, FASSA, FAHMS""","""Orygen, CYMH""",9,FALSE,pat.mcgorry@orygen.org.au,FALSE
-Alexandra,,Parker,Prof,"""BA, Mpsych (Clin), PhD""","""VU, CYMH""",10,FALSE,alex.parker@vu.edu.au,FALSE
-Jonathan,,Karnon,Prof,"""MSc, PhD""","""Flinders""",11,FALSE,jonathan.karnon@flinders.edu.au,FALSE
-Sue,Maree,Cotton,Prof,"""BBSc(Hons), GradDipAppSc(Stats), MAppSci(Stats), PhD (Clinical Neuropsychology)""","""Orygen, CYMH""",12,FALSE,sue.cotton@orygen.org.au,FALSE
-Cathrine,,Mihalopoulos,Prof,"""BBSc(Hons), GDEcSt, PGDHthEc, PhD""","""Monash""",13,FALSE,cathy.mihalopoulos@deakin.edu.au,FALSE
+Jonathan,,Karnon,Prof,"""MSc, PhD""","""Flinders""",2,FALSE,jonathan.karnon@flinders.edu.au,FALSE
+Caroline,X,Gao,Dr,"""BEng, MBiostatistics, PhD""","""Orygen, CYMH, Monash""",3,FALSE,caroline.gao@orygen.org.au,FALSE
+Luis,,Salvador-Carulla,Prof,"""MD, PhD""","""Canberra""",4,FALSE,Luis.Salvador-Carulla@canberra.edu.au,FALSE
+Sue,Maree,Cotton,Prof,"""BBSc(Hons), GradDipAppSc(Stats), MAppSci(Stats), PhD (Clinical Neuropsychology)""","""Orygen, CYMH""",5,FALSE,sue.cotton@orygen.org.au,FALSE
+Cathrine,,Mihalopoulos,Prof,"""BBSc(Hons), GDEcSt, PGDHthEc, PhD""","""Monash""",6,FALSE,cathy.mihalopoulos@deakin.edu.au,FALSE

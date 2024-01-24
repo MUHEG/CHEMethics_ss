@@ -5,14 +5,6 @@ Most health economic analyses are undertaken with the aid of computers. However,
                                                         We propose six criteria for assessing CHEMs: (T1) software files are open access; (T2) project team contributions and judgments are easily identified; 
                                                         (R1) programming practices promote generalisability and transferability; (R2) licenses restrict only unethical reuse; (U1) maintenance infrastructure is in place; and 
                                                         (U2) new releases are systematically retested and appropriately deprecated.
-                                                        To facilitate CHEMs that meet TRU criteria, we have developed a prototype software framework in the open-source programming language R.
-                                                        The framework comprises six code libraries for authoring CHEMs, supplying CHEMs with data and undertaking analyses with CHEMs. 
-                                                        The prototype software framework integrates with services for software development and research data archiving. 
-                                                        We determine that an initial set of youth mental health CHEMs we developed with the prototype software framework wholly meet criteria T1-2, R1-2 and U1 and partially meet criterion U2.
-                                                        Our assessment criteria and prototype software framework can help inform and improve ethical implementation of CHEMs. Resource barriers to ethical CHEM practice should be addressed by research funders.
-\\newline
-\\newline
-\\textbf{Code: }
-Visit https://www.ready4-dev.com for more information about how to find, install and apply the prototype software framework and CHEMs developed with it.
+                                                        Our assessment criteria can help inform and improve ethical implementation of CHEMs. Resource barriers to ethical CHEM practice should be addressed by research funders.
 \\newline
 \\newline

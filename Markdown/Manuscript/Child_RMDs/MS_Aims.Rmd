@@ -5,10 +5,11 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-In this paper, we:
+In this paper, we <!--  MOVED_EDITED_START -->consider literature on modelling practice and draw on our prior experience with developing and using CHEMs to propose<!--  MOVED_EDITED_START -->:  (i) a set of ethical responsibilities for CHEM project teams<!-- and criteria for assessing ethical CHEM implementations -->;<!--  MOVED_EDITED_START --> (ii) attributes of CHEMs that can suggest fulfillment of these responsibilities; and (iii) criteria against which these attributes can be assessed.  <!--  MOVED_EDITED_END -->  
+<!-- (i) some core ethical responsibilities of CHEM project teams; 
 
-(i)	propose a set of ethical responsibilities for CHEM project teams and criteria for assessing ethical CHEM implementations;
+ <!-- --> 
 
-(ii) describe a prototype software framework we have developed to support the ethical implementation of CHEMs; and
+<!-- (ii) describe a prototype software framework we have developed to support the ethical implementation of CHEMs; and -->
 
-(iii)	assess an initial set of youth mental health CHEMs developed with our software framework against our proposed ethical CHEM implementation criteria. 
+<!-- (iii)	assess an initial set of youth mental health CHEMs developed with our software framework against our proposed ethical CHEM implementation criteria.  -->

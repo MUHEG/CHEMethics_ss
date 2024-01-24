@@ -1,36 +1,18 @@
-title: A prototype software framework for transparent, reusable and updatable computational health economic models
+title: Ethical considerations for computational implementation of health economic models
 author:
   - Matthew P Hamilton:
       email: matthew.hamilton1@monash.edu
       institute: [Monash, Orygen]
       correspondence: true
-  - name: Caroline X Gao
-    email: caroline.gao@orygen.org.au
-    institute: [Orygen, CYMH, Monash]
-  - name: Glen  Wiesner
-    email: glen.wiesner@heartfoundation.org.au
-    institute: [HF]
-  - name: Kate M Filia
-    email: kate.filia@orygen.org.au
-    institute: [Orygen, CYMH]
-  - name: Jana M Menssink
-    email: jana.menssink@orygen.org.au
-    institute: [Orygen, CYMH]
-  - name: Petra  Plencnerova
-    email: pplencnerova@headspace.org.au
-    institute: [Headspace]
-  - name: David  Baker
-    email: david.baker@orygen.org.au
-    institute: [Orygen, CYMH]
-  - name: Patrick D McGorry
-    email: pat.mcgorry@orygen.org.au
-    institute: [Orygen, CYMH]
-  - name: Alexandra  Parker
-    email: alex.parker@vu.edu.au
-    institute: [VU, CYMH]
   - name: Jonathan  Karnon
     email: jonathan.karnon@flinders.edu.au
     institute: [Flinders]
+  - name: Caroline X Gao
+    email: caroline.gao@orygen.org.au
+    institute: [Orygen, CYMH, Monash]
+  - name: Luis  Salvador-Carulla
+    email: Luis.Salvador-Carulla@canberra.edu.au
+    institute: [Canberra]
   - name: Sue M Cotton
     email: sue.cotton@orygen.org.au
     institute: [Orygen, CYMH]
@@ -40,9 +22,7 @@ author:
 institute:
   - Monash: School of Public Health and Preventive Medicine, Monash University, Clayton, Australia
   - Orygen: Orygen, Parkville, Australia
-  - CYMH: Centre for Youth Mental Health; The University of Melbourne, Parkville, Australia
-  - HF: Heart Foundation, Melbourne, Australia
-  - Headspace: headspace National Youth Mental Health Foundation, Melbourne, Australia
-  - VU: Institute for Health and Sport, Victoria University, Footscray, Australia
   - Flinders: Flinders University, Adelaide, Australia
-keywords:  computational models, ethics of modelling, health economics, mental disorders, open-source models, software frameworks
+  - CYMH: Centre for Youth Mental Health; The University of Melbourne, Parkville, Australia
+  - Canberra: Faculty of Health, University of Canberra, Australia
+keywords:  computational models, ethics of modelling, health economics, open-source models

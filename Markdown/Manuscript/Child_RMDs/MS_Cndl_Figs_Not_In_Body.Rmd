@@ -5,10 +5,10 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-\newpage
+<!-- \newpage -->
 
-```{r, child = '../Child_RMDs/MS_Figures_1.RMD', echo=FALSE}
-```
-\newpage
-```{r, child = '../Child_RMDs/MS_Figures_2.RMD', echo=FALSE}
-```
+<!-- ```{r, child = '../Child_RMDs/MS_Figures_1.RMD', echo=FALSE} -->
+<!-- ``` -->
+<!-- \newpage -->
+<!-- ```{r, child = '../Child_RMDs/MS_Figures_2.RMD', echo=FALSE} -->
+<!-- ``` -->

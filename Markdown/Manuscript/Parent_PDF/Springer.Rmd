@@ -16,8 +16,8 @@ classoptions:
   # - lineno        # Optional: Add line numbers
   # - iicol         # Optional: Double column layour
 
-title: A prototype software framework for transparent, reusable and updatable computational health economic models
-titlerunning: Framework for ethical computational models
+title: Ethical considerations for computational implementation of health economic models
+titlerunning: Ethical computational modelling
 
 # authors:
 #   - name: Matthew P Hamilton
@@ -61,60 +61,66 @@ authors:
     # degrees: MSc #, PhD
     #equalcont: These authors contributed equally to this work.
     
-  - firstname: Caroline
-    lastname: Gao
-    #     email: caroline.gao@orygen.org.au
-    affiliation: [2,3,1]
-
-  - firstname: Glen
-    lastname: Wiesner
-    #     email: glen.wiesner@heartfoundation.org.au
-    affiliation: [4]
-
-  - firstname: Kate  
-    particle: M
-    lastname: Filia
-    #     email: kate.filia@orygen.org.au
-    affiliation: [2,3]
-
-  - firstname: Jana
-    particle: M
-    lastname: Menssink
-    #     email: jana.menssink@orygen.org.au
-    affiliation: [2,3]
-
-  - firstname: Petra
-    lastname: Plencnerova
-    #     email: pplencnerova@headspace.org.au
-    affiliation: [5]
-
-  - firstname: David  
-    lastname: Baker
-    #     email: david.baker@orygen.org.au
-    affiliation: [2,3]
-
-  - firstname: Patrick 
-    particle: D 
-    lastname: McGorry
-    #     email: pat.mcgorry@orygen.org.au
-    affiliation: [2,3]
-
-  - firstname: Alexandra  
-    lastname: Parker
-    #     email: alex.parker@vu.edu.au
-    affiliation: [6,3]
+  # - firstname: Glen
+  #   lastname: Wiesner
+  #   #     email: glen.wiesner@heartfoundation.org.au
+  #   affiliation: [4]
+  # 
+  # - firstname: Kate  
+  #   particle: M
+  #   lastname: Filia
+  #   #     email: kate.filia@orygen.org.au
+  #   affiliation: [2,3]
+  # 
+  # - firstname: Jana
+  #   particle: M
+  #   lastname: Menssink
+  #   #     email: jana.menssink@orygen.org.au
+  #   affiliation: [2,3]
+  # 
+  # - firstname: Petra
+  #   lastname: Plencnerova
+  #   #     email: pplencnerova@headspace.org.au
+  #   affiliation: [5]
+  # 
+  # - firstname: David  
+  #   lastname: Baker
+  #   #     email: david.baker@orygen.org.au
+  #   affiliation: [2,3]
+  # 
+  # - firstname: Patrick 
+  #   particle: D 
+  #   lastname: McGorry
+  #   #     email: pat.mcgorry@orygen.org.au
+  #   affiliation: [2,3]
+  # 
+  # - firstname: Alexandra  
+  #   lastname: Parker
+  #   #     email: alex.parker@vu.edu.au
+  #   affiliation: [6,3]
 
   - firstname: Jonathan  
     lastname: Karnon
     #     email: jonathan.karnon@flinders.edu.au
-    affiliation: [7]
+    affiliation: [3]
+
+  - firstname: Caroline
+    lastname: Gao
+    #     email: caroline.gao@orygen.org.au
+    affiliation: [2,4,1]
+ 
+  - firstname: Luis  
+    lastname: Salvador-Carulla
+    #     email: jonathan.karnon@flinders.edu.au
+    affiliation: [5]   
+    
 
   - firstname: Sue
     particle: M
     lastname: Cotton
     #     email: sue.cotton@orygen.org.au
-    affiliation: [2,3]
- 
+    affiliation: [2,4]
+
   - firstname: Cathrine
     lastname: Mihalopoulos
     #     email: cathy.mihalopoulos@deakin.edu.au
@@ -145,51 +151,6 @@ affiliations:
   - number: 3
     corresponding: FALSE
     info:
-      orgdiv: Centre for Youth Mental Health
-      orgname: The University of Melbourne
-    address:
-     #   street: "35 Poplar Road"
-        city: Parkville
-        # postcode: 3052
-    #   state: Victoria
-        country: Australia
-  - number: 4
-    corresponding: FALSE
-    info:
-#      orgdiv: XXXXXXXXXXX
-      orgname: Heart Foundation      
-    address:
-     #   street: "2/850 Collins St"
-        city: Docklands
-        # postcode: 3008
-     #   state: Victoria
-        country: Australia
-  - number: 5
-    corresponding: FALSE
-    info:
-#      orgdiv: XXXXXXXXXXX
-      orgname: headspace National Youth Mental Health Foundation   
-    address:
-    #  #   street: "485 La Trobe St"
-        city: Melbourne
-    #     postcode: 3000
-    #  #   state: Victoria
-        country: Australia     
-  - number: 6
-    corresponding: FALSE
-    info:
-      orgdiv: Institute for Health and Sport
-      orgname: Victoria University 
-    address:
-    #  #   street: "70/104 Ballarat Rd"
-        city: Footscray
-    #     postcode: 3011
-    #  #   state: Victoria
-        country: Australia 
-      # 
-  - number: 7
-    corresponding: FALSE
-    info:
 #      orgdiv: XXXXXXXXXXX
       orgname: Flinders University   
     address:
@@ -198,13 +159,67 @@ affiliations:
     #     postcode: 5000
     #  #   state: South Australia
         country: Australia 
+  - number: 4
+    corresponding: FALSE
+    info:
+      orgdiv: Centre for Youth Mental Health
+      orgname: The University of Melbourne
+    address:
+     #   street: "35 Poplar Road"
+        city: Parkville
+        # postcode: 3052
+    #   state: Victoria
+        country: Australia
+#   - number: 4
+#     corresponding: FALSE
+#     info:
+# #      orgdiv: XXXXXXXXXXX
+#       orgname: Heart Foundation      
+#     address:
+#      #   street: "2/850 Collins St"
+#         city: Docklands
+#         # postcode: 3008
+#      #   state: Victoria
+#         country: Australia
+#   - number: 5
+#     corresponding: FALSE
+#     info:
+# #      orgdiv: XXXXXXXXXXX
+#       orgname: headspace National Youth Mental Health Foundation   
+#     address:
+#     #  #   street: "485 La Trobe St"
+#         city: Melbourne
+#     #     postcode: 3000
+#     #  #   state: Victoria
+#         country: Australia     
+#   - number: 6
+#     corresponding: FALSE
+#     info:
+#       orgdiv: Institute for Health and Sport
+#       orgname: Victoria University 
+#     address:
+#     #  #   street: "70/104 Ballarat Rd"
+#         city: Footscray
+#     #     postcode: 3011
+#     #  #   state: Victoria
+#         country: Australia 
+#       # 
+  - number: 5
+    corresponding: FALSE
+    info:
+#      orgdiv: XXXXXXXXXXX
+      orgname: University of Canberra  
+    address:
+    #     # street: "182 Victoria Square"     
+        city: Canberra
+    #     postcode: 5000
+    #  #   state: South Australia
+        country: Australia 
 keywords:  
   - computational models
   - ethics of modelling
   - health economics
-  - mental disorders
   - open-source models
-  - software frameworks   
   
 pacs: 
   jel:
