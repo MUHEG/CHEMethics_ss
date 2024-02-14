@@ -38,10 +38,10 @@ X <- renewSlot(X,
                {
                  args_ls <- X@abstract_args_ls
                  args_ls$abstract_ls <- list(Summary = "Most health economic analyses are undertaken with the aid of computers. However, the ethical dimensions of implementing health economic models as software (or computational health economic models (CHEMs)) are poorly understood. 
-                                                        We propose that developers and funders of CHEMs share ethical responsibilities to (i) establish socially acceptable user requirements and design specifications; (ii) ensure fitness for purpose; and (iii) support socially beneficial use. 
-                                                        We further propose that a transparent (T), reusable (R) and updatable (U) CHEM is suggestive of a project team that has largely fulfilled these responsibilities.
-                                                        We propose six criteria for assessing CHEMs: (T1) software files are open access; (T2) project team contributions and judgments are easily identified; 
-                                                        (R1) programming practices promote generalisability and transferability; (R2) licenses restrict only unethical reuse; (U1) maintenance infrastructure is in place; and 
+                                                        We propose that developers and funders of CHEMs should pursue the ethical goals of (i) socially acceptable user requirements and design specifications; (ii) fitness for purpose; and (iii) socially beneficial use. 
+                                                        We further propose that a transparent (T), reusable (R) and updatable (U) CHEM is suggestive of a project team that has largely met these goals.
+                                                        We propose six criteria for assessing TRU CHEMs: (T1) software files are open access; (T2) project team contributions and judgments are easily identified; 
+                                                        (R1) programming practices promote selective reuse; (R2) licenses restrict only unethical reuse; (U1) maintenance infrastructure is in place; and 
                                                         (U2) new releases are systematically retested and appropriately deprecated.
                                                         Our assessment criteria can help inform and improve ethical implementation of CHEMs. Resource barriers to ethical CHEM practice should be addressed by research funders."
                                              # ,

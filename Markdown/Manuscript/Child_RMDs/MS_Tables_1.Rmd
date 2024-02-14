@@ -4,33 +4,33 @@ author: "Author"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-```{r proscons, tab.cap='Implications of choosing commercial modelling software or an open-source programming language for the computational implementation of health economic models', tab.id = 'proscons', echo = F, results = 'asis'}
+```{r proscons, tab.cap='Implications of choosing commercial modelling or spreadsheet software or an open-source programming language for the computational implementation of health economic models', tab.id = 'proscons', echo = F, results = 'asis'}
 library(kableExtra)  
 df <- data.frame(`Implications` = c(rep("Resources",4), rep("Ethical",10)),
-                 `Commercial modelling software` = c("(+) Will include tools to efficienty accomplish many common modelling tasks.",
+                 `Commercial modelling or spreadsheet software` = c("(+) Will include tools to efficienty accomplish many common modelling tasks.",
                                                      "(+) Requires limited or no programming skills.",
-                                                     "(-) Requires model developers and users to purchase software licenses ",
+                                                     "(-) Requires model developers and users to purchase (in some cases, expensive) software licenses.",
                                                      "",
                                                      "Transparency",
                                                      "(+) Popular tools (e.g. Excel) are readily understood by many.",
-                                                     "(-) Non seemless integration with scientific manuscript authoring pipelines raises risk of (undetected) transcription errors when reporting results.",
+                                                     "(-) Requirement to manually transfer results to manuscripts through repeated copy and paste actions or transcription from visual inspection increases risk of (undetected) reporting errors.",
                                                      "",
                                                      "Reusability",
-                                                     "(+) Files will open and execute correctly for years after project is completed.",
+                                                     "(+) Files will reliably open and execute correctly for years after project is completed.",
                                                      "",
                                                      "",
                                                      "Updatability",
-                                                     "(-) Selective modification with appropriate attribution can be difficult."),
+                                                     "(-) Modifications and adaptations, particularly by third parties, may require bespoke permissions and it can be difficult to clearly itemise all changes."),
                  `Open-source programming language` = c("(-) Initial development is likely to be time and resource intensive.",
                                                         "(+) Over medium term, efficiency savings are possible if:",
-                                                        "(i)	artefacts (code and data) from pre-existing models are leveraged; and / or",
+                                                        "(i) artefacts (code and data) from pre-existing models are leveraged; and / or",
                                                         "(ii)	maintaining and transferring (e.g. to new decision problems / contexts) model.",
                                                         "Transparency",
                                                         "(+) Easy to publicly share testable source code while selectively restricting access to confidential data.",
                                                         "(+) Easy to make clear who has developed and tested each part.",
                                                         "(-) Novel code increases likelihood of (undetected) software errors.",
                                                         "Reusability",
-                                                        "(-) Potentially fragile – if not maintained / not bundled with all required and correctly versioned dependencies",
+                                                        "(-) Potentially fragile – if not maintained / not bundled with all required and correctly versioned dependencies.",
                                                         "(+) Facilitates modular implementations that make complex model representations more tractable.",
                                                         "(+) Facilitates customised integration with existing data / decision systems.",
                                                         "Updatability",
@@ -50,7 +50,7 @@ if(params$X@outp_formats_chr[1] == "Word") {
     ftExtra::colformat_md()
   }else{
     df %>%
-      dplyr::filter(!`Commercial modelling software` %in% c("Transparency", "Reusability","Updatability")) %>%
+      dplyr::filter(!`Commercial modelling or spreadsheet software` %in% c("Transparency", "Reusability","Updatability")) %>%
       kableExtra::kbl(booktabs = T, 
                       escape = F,
                       caption = knitr::opts_current$get("tab.cap")) %>%

@@ -10,7 +10,7 @@ df <- data.frame(` ` = c("Transparent", "Reusable", "Updatable"),
                  `Social acceptability` = c("Modeller judgments, model features and verification checks can be reviewed by third parties.",
                                                                         "Models can be modified to reflect alternative value judgments.",
                                                                         "Models can be modified to reflect alternative value judgments."),
-                 `Fitness for purpose` = c("Modeller judgments, model features and verification checks can be reviewed by third parties.","Third party use increases likelihood of errors being identified.","Models that are maintained can be validly used for longer."),
+                 `Fitness for purpose` = c("Modeller judgments, model features and verification checks can be reviewed by third parties.","Third party use increases likelihood of errors being identified.","Models can be validly used for longer."),
                  `Beneficial use` = c("Decision-makers can understand the strengths and weakness of models before applying them.","Can inform more decision problems, in more contexts with less duplicative effort.","Models can be validly used for longer."),
                  check.names = F)
 if(params$X@outp_formats_chr[1] == "Word") {
