@@ -4,12 +4,12 @@ author:
       email: matthew.hamilton1@monash.edu
       institute: [Monash, Orygen]
       correspondence: true
-  - name: Jonathan  Karnon
-    email: jonathan.karnon@flinders.edu.au
-    institute: [Flinders]
   - name: Caroline X Gao
     email: caroline.gao@orygen.org.au
     institute: [Orygen, CYMH, Monash]
+  - name: Jonathan  Karnon
+    email: jonathan.karnon@flinders.edu.au
+    institute: [Flinders]
   - name: Luis  Salvador-Carulla
     email: Luis.Salvador-Carulla@canberra.edu.au
     institute: [Canberra]
@@ -22,7 +22,7 @@ author:
 institute:
   - Monash: School of Public Health and Preventive Medicine, Monash University, Clayton, Australia
   - Orygen: Orygen, Parkville, Australia
-  - Flinders: Flinders University, Adelaide, Australia
   - CYMH: Centre for Youth Mental Health; The University of Melbourne, Parkville, Australia
+  - Flinders: Flinders University, Adelaide, Australia
   - Canberra: Faculty of Health, University of Canberra, Australia
 keywords:  computational models, ethics of modelling, health economics, open-source models

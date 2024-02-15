@@ -98,17 +98,16 @@ authors:
   #   lastname: Parker
   #   #     email: alex.parker@vu.edu.au
   #   affiliation: [6,3]
+  - firstname: Caroline
+    lastname: Gao
+    #     email: caroline.gao@orygen.org.au
+    affiliation: [2,4,1]
 
   - firstname: Jonathan  
     lastname: Karnon
     #     email: jonathan.karnon@flinders.edu.au
     affiliation: [3]
 
-  - firstname: Caroline
-    lastname: Gao
-    #     email: caroline.gao@orygen.org.au
-    affiliation: [2,4,1]
- 
   - firstname: Luis  
     lastname: Salvador-Carulla
     #     email: jonathan.karnon@flinders.edu.au

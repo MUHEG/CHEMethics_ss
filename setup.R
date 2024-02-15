@@ -38,12 +38,13 @@ X <- renewSlot(X,
                {
                  args_ls <- X@abstract_args_ls
                  args_ls$abstract_ls <- list(Summary = "Most health economic analyses are undertaken with the aid of computers. However, the ethical dimensions of implementing health economic models as software (or computational health economic models (CHEMs)) are poorly understood. 
-                                                        We propose that developers and funders of CHEMs should pursue the ethical goals of (i) socially acceptable user requirements and design specifications; (ii) fitness for purpose; and (iii) socially beneficial use. 
+                                                        We propose that developers and funders of CHEMs should pursue the ethical goals of: (i) socially acceptable user requirements and design specifications; (ii) fit for purpose implementations; and (iii) socially beneficial post-release use. 
                                                         We further propose that a transparent (T), reusable (R) and updatable (U) CHEM is suggestive of a project team that has largely met these goals.
                                                         We propose six criteria for assessing TRU CHEMs: (T1) software files are open access; (T2) project team contributions and judgments are easily identified; 
                                                         (R1) programming practices promote selective reuse; (R2) licenses restrict only unethical reuse; (U1) maintenance infrastructure is in place; and 
                                                         (U2) new releases are systematically retested and appropriately deprecated.
-                                                        Our assessment criteria can help inform and improve ethical implementation of CHEMs. Resource barriers to ethical CHEM practice should be addressed by research funders."
+                                                        Few existing CHEMs would meet all TRU criteria. Addressing these limitations will require changes to the work practices, funding and tools that underpin health economic model development.
+                                                        Priority actions include the development of new and updated good practice guidelines and research funding to support activities that help make CHEMs more easily understood, widely reused and kept up to date."
                                              # ,
                                              # Objectives = "We aimed to develop a conceptual and technical framework for implementing open source mental health systems models and illustrate how it can be applicatied to economic topics in youth mental health.",
                                              # Methods = "We created a software development kit in R to support standardised implementation of mental health systems models. As a worked example, we applied the toolkit to develop open source youth mental health utility mapping models, which we assessed against five principles using 17 standards.",

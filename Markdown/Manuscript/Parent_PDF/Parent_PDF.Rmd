@@ -28,7 +28,7 @@ graphics: yes
 #csl: plos.csl
 title: REPLACE ME
 titlerunning: TEMPORARY
-authorrunning: Hamilton, Gao, Wiesner et al.
+authorrunning: Hamilton, Gao, Karnon, et al.
 thanks: | 
     The study was funded by ADD DETAILS HERE. 
 keywords: one, two, three, four, five, six

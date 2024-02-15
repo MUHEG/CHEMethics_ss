@@ -7,7 +7,7 @@ output: html_document
 ```{r proscons, tab.cap='Implications of choosing commercial modelling or spreadsheet software or an open-source programming language for the computational implementation of health economic models', tab.id = 'proscons', echo = F, results = 'asis'}
 library(kableExtra)  
 df <- data.frame(`Implications` = c(rep("Resources",4), rep("Ethical",10)),
-                 `Commercial modelling or spreadsheet software` = c("(+) Will include tools to efficienty accomplish many common modelling tasks.",
+                 `Commercial modelling or spreadsheet software` = c("(+) Will include tools to efficiently accomplish many common modelling tasks.",
                                                      "(+) Requires limited or no programming skills.",
                                                      "(-) Requires model developers and users to purchase (in some cases, expensive) software licenses.",
                                                      "",

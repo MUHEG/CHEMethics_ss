@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.5)  14 FEB 2024 17:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.5)  15 FEB 2024 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -796,40 +796,40 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [7]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 292.
+               Default added (so using `tbp') on input line 287.
 
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 295.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 290.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 295.
+(Font)              size <5> substituted on input line 290.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.015> not available
-(Font)              size <5> substituted on input line 295.
+(Font)              size <5> substituted on input line 290.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 295.
+(Font)              size <5> substituted on input line 290.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 295.
+(Font)              size <5> substituted on input line 290.
 
 
-Overfull \hbox (63.50574pt too wide) in paragraph at lines 292--328
+Overfull \hbox (63.50574pt too wide) in paragraph at lines 287--323
  [] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 333.
+               Default added (so using `tbp') on input line 328.
 
 
-Overfull \vbox (9.53563pt too high) detected at line 346
+Overfull \vbox (9.53563pt too high) detected at line 341
  []
 
 
-Overfull \hbox (59.35962pt too wide) in paragraph at lines 333--349
+Overfull \hbox (59.35962pt too wide) in paragraph at lines 328--344
  [] 
  []
 
@@ -868,7 +868,7 @@ Underfull \hbox (badness 3838) in paragraph at lines 139--143
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 172--176
+Underfull \hbox (badness 4531) in paragraph at lines 177--181
 []\OT1/cmr/m/n/10 B^^?uy^^?ukkaramikli NC, Rutten-van M^^?olken MPMH, Sev-erens JL, Al M.
  []
 
@@ -876,17 +876,17 @@ Underfull \hbox (badness 4531) in paragraph at lines 172--176
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [11]
-Underfull \hbox (badness 1337) in paragraph at lines 225--229
+Underfull \hbox (badness 1337) in paragraph at lines 230--234
 []\OT1/cmr/m/n/10 Ye Y, Bara-p-a-tre S, Davis MK, Ellis-ton KO, Davatzikos C, Fedorov A,
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 237--241
+Underfull \hbox (badness 1107) in paragraph at lines 242--246
 []\OT1/cmr/m/n/10 Shahin M, Ali Babar M, Zhu L.  Con-tin-u-ous Inte-gra-tion, Deliv-ery and
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 237--241
+Underfull \hbox (badness 1147) in paragraph at lines 242--246
 \OT1/cmr/m/n/10 Deploy-ment: A Sys-tem-atic Review on Approaches, Tools, Chal-lenges and
  []
 
@@ -906,21 +906,21 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.985pt have occurred.
 
 Package rerunfilecheck Info: File `Submission.out' has not changed.
-(rerunfilecheck)             Checksum: 01B0ECBC5D1C86A96375DCFE0618CF15;1583.
+(rerunfilecheck)             Checksum: 835F372A080A97A34E353E19272841A8;1373.
  ) 
 Here is how much of TeX's memory you used:
  16766 strings out of 476187
- 263426 string characters out of 5793920
- 1943978 words of memory out of 5000000
- 38367 multiletter control sequences out of 15000+600000
+ 263415 string characters out of 5793920
+ 1944978 words of memory out of 5000000
+ 38368 multiletter control sequences out of 15000+600000
  575717 words of font info for 108 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
  90i,15n,93p,1983b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Submission.pdf (13 pages, 194429 bytes).
+Output written on Submission.pdf (13 pages, 195715 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 360 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

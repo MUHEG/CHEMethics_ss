@@ -1,7 +1,7 @@
 first_nm_chr,middle_nm_chr,last_nm_chr,title_chr,qualifications_chr,institute_chr,sequence_int,is_corresponding_lgl,email_chr,is_equal_first_lgl
 Matthew,Philip,Hamilton,Mr,"""BBS, MSC""","""Monash, Orygen""",1,TRUE,matthew.hamilton1@monash.edu,FALSE
-Jonathan,,Karnon,Prof,"""MSc, PhD""","""Flinders""",2,FALSE,jonathan.karnon@flinders.edu.au,FALSE
-Caroline,X,Gao,Dr,"""BEng, MBiostatistics, PhD""","""Orygen, CYMH, Monash""",3,FALSE,caroline.gao@orygen.org.au,FALSE
+Caroline,X,Gao,Dr,"""BEng, MBiostatistics, PhD""","""Orygen, CYMH, Monash""",2,FALSE,caroline.gao@orygen.org.au,FALSE
+Jonathan,,Karnon,Prof,"""MSc, PhD""","""Flinders""",3,FALSE,jonathan.karnon@flinders.edu.au,FALSE
 Luis,,Salvador-Carulla,Prof,"""MD, PhD""","""Canberra""",4,FALSE,Luis.Salvador-Carulla@canberra.edu.au,FALSE
 Sue,Maree,Cotton,Prof,"""BBSc(Hons), GradDipAppSc(Stats), MAppSci(Stats), PhD (Clinical Neuropsychology)""","""Orygen, CYMH""",5,FALSE,sue.cotton@orygen.org.au,FALSE
 Cathrine,,Mihalopoulos,Prof,"""BBSc(Hons), GDEcSt, PGDHthEc, PhD""","""Monash""",6,FALSE,cathy.mihalopoulos@deakin.edu.au,FALSE
