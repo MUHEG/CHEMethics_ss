@@ -9,11 +9,11 @@ output: html_document
 ```{r checktb, tab.cap='Assessment of a CHEM implementation in youth mental health using Transparent, Reusable and Updatable (TRU) criteria', tab.id = 'checktb', echo = F, results = 'asis'}
 library(kableExtra)  
 df <- data.frame(Criterion = c("T1 Software files are open access", 
-                               "T2 Project team contributions and judgments are easily identified", 
+                               "T2 Developer contributions and judgments on appropriate use are easily identified", 
                                "R1 Programming practices promote selective reuse",
-                               "R2 Licenses restrict only unethical reuse",
+                               "R2 Licenses permit reuse and derivative works",
                                "U1 Maintenance infrastructure is in place",
-                               "U2 New releases are systematically retested and deprecated"),
+                               "U2 Releases are systematically retested and deprecated"),
                  `Met?` = c(rep("Yes",5),"Partial"),
                  Detail = c("All source code and testing procedures are available in public GitHub repositories, with each code release persistently available in a Zenodo repository. As the study dataset contains confidential patient records, it was not published. Instead, a synthetic representation of the study dataset is persistently available in a repository in the Harvard Dataverse. Data files to support out of sample application of models are published at the same location.",
                             "All module libraries, programs, and datasets are distributed with citation information. Public GitHub repositories detail author code contributions over project development history. Model catalogues persistently available on the Harvard Dataverse describe the predictive performance of models under multiple usage regimes. Each code library is documented with worked examples of how to apply CHEM modules.  Analysis and reporting programs are self-documenting.  Sub-routines for generating reports are documented with README files.",

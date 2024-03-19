@@ -48,7 +48,7 @@ ome resistence to adoption centers on.... [@Padula2017] .
 HE commercial...[@Feenstra2022],
    author]
 
-A major shift in how health economic models are implemented.....They may also have educational value in developing the health systems modelling field [@Dunlop2017]. However, open source computational models also present a range of conceptual, technical, legal and resourcing issues compared to more traditional approaches to model development.
+A major shift in how health economic models are implemented.....They may also have educational value in developing the health systems modelling field [@Dunlop2017]. However, open-source computational models also present a range of conceptual, technical, legal and resourcing issues compared to more traditional approaches to model development.
 
 The health economics field i
 
@@ -67,7 +67,7 @@ Commercial ownership of HE models reduce scope for open-source
 finances, accountability, and ownership barriers to OS
 still not very widespread in HE decision model
 would require more resources, could greatly increase transparency
-distinguishing grades of open source
+distinguishing grades of open-source
 Model validation should hence become more structured and standardized, as well as more transparent.
 
 Modular validation - Ghabri, Justifies extensive validation
@@ -79,11 +79,11 @@ poor validation - ghabri
 Over the last decade there have been
 the potential to increase the transparency, reproducibility and reuse of health economic analyses. 
 
-Open source frameworks, which have been recommended for the development of mental health modelling field [@RN73], have the potential to help address a number of these challenges. Open source approaches can promote common standards and interoperability, improve model transparency and facilitate routine updates to rectify errors, update data and add features.  
+open-source frameworks, which have been recommended for the development of mental health modelling field [@RN73], have the potential to help address a number of these challenges. open-source approaches can promote common standards and interoperability, improve model transparency and facilitate routine updates to rectify errors, update data and add features.  
 
 
-- Our project - readyforwhatsnext : open source model of the systems shaping the mental health of young people
-- Lack of guidance on open source health economic models and in particular on recommended frameworks for implementing the computational model.
+- Our project - readyforwhatsnext : open-source model of the systems shaping the mental health of young people
+- Lack of guidance on open-source health economic models and in particular on recommended frameworks for implementing the computational model.
 - Focus computational model. Most in need of novel guidance. Also: Of the three components that comprise a mental health computer simulation model - the conceptual model, the mathematical model and the computational model - only the first two are typically developed and reported in a manner that facilitates reuse, refinement and extension by others. This is problematic as the code implementation is where the theory represented by a simulation model is most fully elaborated. 
 
 ISPOR T & V: 
@@ -117,7 +117,7 @@ and to anticipate and mitigate risks to the successful implementation of these r
 
 Developing theories that produce valid and useful predictions about the potential impacts and feasibility of phased, multi-component programs of policy and service system reform is most likely a major and long term challenge. This undertaking might become more tractable if it could be chunked into smaller tasks and progressed by a research community that, even when working independently, routinely test, re-use and extend each other's work. 
 
-However, developing  This leads to computational model issue. This leads to open source.
+However, developing  This leads to computational model issue. This leads to open-source.
 
 The absence of common standards and taxonomies make it hard to develop these more extensive models by simply combining existing mental health models.
 

@@ -1,4 +1,4 @@
-title: Ethical considerations for computational implementation of health economic models
+title: Identifying and assessing ethical risks when implementing health economic models as software
 author:
   - Matthew P Hamilton:
       email: matthew.hamilton1@monash.edu
@@ -24,5 +24,5 @@ institute:
   - Orygen: Orygen, Parkville, Australia
   - CYMH: Centre for Youth Mental Health; The University of Melbourne, Parkville, Australia
   - Flinders: Flinders University, Adelaide, Australia
-  - Canberra: Faculty of Health, University of Canberra, Australia
+  - Canberra: Health Research Institute, Faculty of Health, University of Canberra, Australia
 keywords:  computational models, ethics of modelling, health economics, open-source models

@@ -4,117 +4,22 @@ author: "Author"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-```{r cpkgs, tab.cap='Software framework R libraries', tab.id = 'cpkgs', echo = F, results = 'asis'}
-library(kableExtra)  
-df <- tibble::tibble(Package = c("ready4",
-                                       "ready4fun",
-                                       "ready4class",
-                                       "ready4pack",
-                                       "ready4use",
-                                       "ready4show"),
-                     Purpose = c("Provides a template model module and novel syntax and tools for finding interoperable CHEM modules, datasets and reproducible analysis programs.",
-                                 "Streamline and standardise the authoring and documenting of functions that support selective reuse of model algorithms.",
-                                 "Streamline and standardise the authoring and documenting of new CHEM modules.",
-                                 "Help bundle and disseminate CHEM modules as documented, licensed and quality assured  R libraries.",
-                                 "Help manage the labelling and transfer of data between CHEM modules and local and remote data repositories.",
-                                 "Support the authoring of programs that implement integrated and reproducible data ingest, analysis and reporting pipelines."),
-                           # A = c("3","2-3","2","1-2,5,7","1-2,7","4,6"), 
-                           # R = c("4","5","4-5","1,3,6","3,7",""),
-                           # U = c("","","","1-3","1",""),
-                           `R library dependencies` = Package %>%
-                             purrr::map(~ {
-                               utils::packageDescription(.x) %>%
-                                 `[`(c("Depends", "Imports")) %>%
-                                 purrr::map(~{
-                                   if(is.null(.x)){
-                                     character(0)
-                                     }else{
-                                       .x %>%
-                                         strsplit(",\\n") %>%
-                                         purrr::flatten_chr() %>%
-                                         purrr::map(~strsplit(.x,", ") %>%
-                                                      purrr::flatten_chr()) %>%
-                                         purrr::flatten_chr() %>% sort() %>%
-                                         purrr::discard(~startsWith(.x,"R "))
-                                       }
-                                   }) %>%
-                                 purrr::flatten_chr() %>%
-                                 unique() %>%
-                                 sort() %>%
-                                 purrr::map_chr(~{
-                                   updated_1L_chr <- stringr::str_replace_all(.x,"\\n"," ")
-                                   problem_idx_1L_chr <- stringr::str_locate(updated_1L_chr," ")[1,1] %>%
-                                     unname()
-                                   if(!is.na(problem_idx_1L_chr))
-                                     updated_1L_chr <- updated_1L_chr %>%
-                                     stringr::str_sub(end = problem_idx_1L_chr-1)
-                                   updated_1L_chr %>% 
-                                     trimws(which = "left") 
-                                   })
-                               }) %>% 
-                             purrr::map_chr (~ .x %>% paste0(collapse = " "))) %>% 
-  as.data.frame() 
-# if(params$X@outp_formats_chr[1] != "Word"){
-#       df$Ref <- c(rep("",6)
-#        # "@ready42022","@ready4fun2022","@ready4class2022","@ready4pack2022","@ready4use2022","@ready4show2022"
-#                   )
-# }else{
-#   df$Ref <- ""
-# }
 
-df <- df %>%
-  # dplyr::mutate(Standard = purrr::pmap_chr(df,
-  #                                          ~paste0("A",
-  #                                                 ..3,
-  #                                                 paste0(rep("&nbsp;",
-  #                                                     2+max(nchar(df[,3]))-nchar(..3)),
-  #                                                     collapse = ""#
-  #                                                     ),
-  #                                                 ifelse(..4=="","","R"),
-  #                                                 ..4,
-  #                                                 paste0(rep("&nbsp;",
-  #                                                     2+max(nchar(df[,4]))-nchar(..4)),
-  #                                                     collapse = ""#
-  #                                                     ),
-  #                                                 ifelse(..5=="","","U"),
-  #                                                 ..5,
-  #                                                 paste0(rep("&nbsp;",
-  #                                                     1+max(nchar(df[,5]))-nchar(..5)),
-  #                                                     collapse = ""#
-  #                                                     )#,
-  #                                                 ))) %>%
-  
-  dplyr::select(Package,
-                #Ref,
-                Purpose,
-                #Standard,
-                `R library dependencies`) 
-
-names_chr <- names(df)
-# df <- data.frame(df[,1],
-#                  rep(ifelse(params$X@outp_formats_chr[1] == "Word"," ","&nbsp; &nbsp; &nbsp;"),
-#                      nrow(df)),
-#                  df[,2#:3
-#                     ],
-#                  rep(ifelse(params$X@outp_formats_chr[1] == "Word"," ","&nbsp; &nbsp; &nbsp;")
-#                      ,nrow(df)),
-#                  #df[,4],
-#                  #rep("&nbsp; &nbsp; &nbsp;",nrow(df)),
-#                  df[,3#5
-#                     ])
-# colnames(df) <- c("Package",
-#                   ifelse(params$X@outp_formats_chr[1] == "Word","XXX"," "),
-#                   #"Ref", 
-#                   "Purpose", 
-#                   ifelse(params$X@outp_formats_chr[1] == "Word","YYY"," "),
-#                   #"Standard     ",# " ",
-#                   "R library dependencies")
-#df$Package <- "![](../Data/images/ready4.png){ width=10% }"#"\\includegraphics[valign=T,scale=2.5,raise=2mm]{../Data/images/ready4.png}"
-#df$`Standard     `  <- df$`Standard     ` %>% stringr::str_replace_all("&nbsp;"," ")
+\renewcommand{\arraystretch}{2}
+```{r trucrit, tab.cap='Criteria for assessing the transparency, reusability and updatability of CHEMs', tab.id = 'cpkgs', echo = F, results = 'asis'}
+library(kableExtra) 
+df <- data.frame(Attribute = c(rep("Transparent",2), rep("Reusable",2), rep("Updtatable",2)),
+                 Item = c("T","R","U") %>% purrr::map(~paste0(.x,1:2)) %>% purrr::flatten_chr(),
+                 Criterion = c("Software files (executable code, testing procedures and outcomes and non-confidential data) are publicly available.",
+                               "It is easy to see who funded, developed and tested each part of the CHEM and to identify the modelling team’s assumptions, judgments and theories about CHEM development and use.",
+                               "Programming practices facilitate selective reuse of model sub-components.",
+                               "Licenses allow anyone to ethically reuse model code and non-confidential data, in whole or in part, without charge, and for purposes that include the creation of derivative works.",
+                               "Maintenance infrastructure is in place to support version control and collaboration with model users.",
+                               "Each new release of a CHEM is systematically retested, with changes implemented to minimise disruptions for existing model users."))
 if(params$X@outp_formats_chr[1] == "Word") {
   library("flextable")
   library("ftExtra")
-  df %>% #[,c(1,3:4,6:7)] %>%
+  df %>%
     ready4show::print_table(output_type_1L_chr = params$X@outp_formats_chr[1],
                             caption_1L_chr = knitr::opts_current$get("tab.cap"),
                             mkdn_tbl_ref_1L_chr = paste0("tab:",knitr::opts_current$get("tab.id")),
@@ -123,25 +28,26 @@ if(params$X@outp_formats_chr[1] == "Word") {
                             sanitize_fn = NULL) %>%
     ftExtra::colformat_md()
   }else{
-    #df$Ref<-NULL
-    #df$Package <- ""
-    # df$Package  <- df$Package %>% 
-    #                   purrr::map_chr(~paste0("\\includegraphics[valign=M,width=1.9cm,raise=4mm]{../Data/images/",.x,"_logo.png}"))#scale=0.4,raise=3mm]
-    # df$Package <- "\\includegraphics[valign=M,scale=0.08,raise=3mm]{../Data/images/ready4.png}"
-    #df[,c(1,3,5:6)]   %>%
     df %>%
-    # kableExtra::kbl(format = "markdown",
-    #                   escape = F,
-    #                 caption = knitr::opts_current$get("tab.cap"))
       kableExtra::kbl(booktabs = T, 
                       escape = F,
+                      linesep = "\\addlinespace",
                       caption = knitr::opts_current$get("tab.cap")) %>%
       kableExtra::kable_paper(full_width = F) %>%
-      kableExtra::column_spec(2, width = "20em", latex_valign = "m") %>%
-      # kableExtra::column_spec(1, 
-      #                         image = kableExtra::spec_image(rep("../Data/images/ready4.png",nrow(df)), 
-      #                                                           150, 150)) %>%
-      kableExtra::column_spec(3, width = "20em",
-                              latex_valign = "m")
+      #kableExtra::pack_rows("Resource requirements implications",1,4, hline_after = T) %>%
+      #kableExtra::pack_rows("Ethical implications",5,14, hline_after = T) %>%
+      kableExtra::column_spec(1, width = "8em", bold=T) %>% #, latex_valign = "m"
+      kableExtra::column_spec(2, width = "3em") %>%
+      kableExtra::column_spec(3, width = "28em") %>%
+      kableExtra::collapse_rows(columns = 1, latex_hline = "major") 
+    # %>%
+    #   kableExtra::kable_styling(latex_options = "striped")
+      # kableExtra::pack_rows("Accountable - it is easy to see who developed, tested and applied a model and how they did it.",1,7) %>%
+      # kableExtra::pack_rows("Updatable - a model and its components are maintained and continuously improved.",17,20) %>%
+      # kableExtra::pack_rows("Modular - models and their components can be combined to extend their scope",11,12) %>%
+      # kableExtra::pack_rows("Epitomising - model code can be re-used in other decision contexts",13,15) %>%
+      # kableExtra::pack_rows("Reusable - a model and its components can be used in other models and by other modellers.",8,16) #%>%
+      # kableExtra::pack_rows("Yielding - a model can be simply, flexibly and reliably used as a decision aid",19,20)
+
     }
 ```

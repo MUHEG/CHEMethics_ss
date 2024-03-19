@@ -20,8 +20,8 @@ output: html_document
 
 \newpage
 
-<!-- # ```{r, child = '../Child_RMDs/MS_Tables_3.Rmd', echo=FALSE} -->
-<!-- # ``` -->
-<!-- # \newpage -->
+```{r, child = '../Child_RMDs/MS_Tables_3.Rmd', echo=FALSE}
+```
+\newpage
 <!-- # ```{r, child = '../Child_RMDs/MS_Tables_4.Rmd', echo=FALSE} -->
 <!-- # ``` -->

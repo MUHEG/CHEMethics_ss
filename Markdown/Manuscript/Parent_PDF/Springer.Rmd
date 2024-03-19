@@ -16,7 +16,7 @@ classoptions:
   # - lineno        # Optional: Add line numbers
   # - iicol         # Optional: Double column layour
 
-title: Ethical considerations for computational implementation of health economic models
+title: Identifying and assessing ethical risks when implementing health economic models as software
 titlerunning: Ethical computational modelling
 
 # authors:

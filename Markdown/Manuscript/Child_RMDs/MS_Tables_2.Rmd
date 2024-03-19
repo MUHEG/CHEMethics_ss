@@ -11,11 +11,13 @@ df <- data.frame(` ` = c("Transparent", "Reusable", "Updatable"),
                                                                         "Models can be modified to reflect alternative value judgments.",
                                                                         "Models can be modified to reflect alternative value judgments."),
                  `Fitness for purpose` = c("Modeller judgments, model features and verification checks can be reviewed by third parties.","Third party use increases likelihood of errors being identified.","Models can be validly used for longer."),
-                 `Beneficial use` = c("Decision-makers can understand the strengths and weakness of models before applying them.","Can inform more decision problems, in more contexts with less duplicative effort.","Models can be validly used for longer."),
+                 `Beneficial use` = c("Decision-makers can understand the strengths and weakness of models before applying them.","Can inform more decision problems, in more contexts with less duplicative effort.",""#"Models can be validly used for longer."
+                                      ),
                  check.names = F)
-if(params$X@outp_formats_chr[1] == "Word") {
-  library("flextable")
+ library("flextable")
   library("ftExtra")
+if(params$X@outp_formats_chr[1] == "Word") {
+
   df %>%
     ready4show::print_table(output_type_1L_chr = params$X@outp_formats_chr[1],
                             caption_1L_chr = knitr::opts_current$get("tab.cap"),
@@ -27,19 +29,21 @@ if(params$X@outp_formats_chr[1] == "Word") {
   }else{
     # library(huxtable)
     # library(dplyr)
-    #flextable::set_flextable_defaults() #fonts_ignore=TRUE
-    # flextable::flextable(df) %>%
-    #   flextable::border_inner(border = officer::fp_border(style = "none")) %>%
-    #   flextable::border_outer() %>%
-    #   flextable::align(align = "center", part = "header") %>%
-    #   flextable::merge_h() %>%
-    #   flextable::merge_v() %>%
-    #   flextable::valign(j=2, valign = "top") %>%
-    #   flextable::align(j=2:4, align = "center") %>%
-    #   flextable::bold(j=1, part = "all") %>%
-    #   flextable::bold(part = "header") %>%
-    #   flextable::width(j = 1, width = 1.2) %>%
-    #   flextable::width(j = 2:4, width = 1.6)
+   # flextable::set_flextable_defaults() #fonts_ignore=TRUE
+    flextable::flextable(df) %>%
+      # flextable::border_inner(border = officer::fp_border(style = "none")) %>%
+      # flextable::border_outer() %>%
+      flextable::align(align = "center", part = "header") 
+    # %>%
+    #   flextable::merge_at(i = 3, j = 3:4)
+      # flextable::merge_h() %>%
+      # flextable::merge_v() %>%
+      # flextable::valign(j=2, valign = "top") %>%
+      # flextable::align(j=2:4, align = "center") %>%
+      # flextable::bold(j=1, part = "all") %>%
+      # flextable::bold(part = "header") %>%
+      # flextable::width(j = 1, width = 1.2) %>%
+      # flextable::width(j = 2:4, width = 1.6)
     # %>%
     #   
       #flextable::merge_at(i=2,j=1:2)
@@ -50,23 +54,17 @@ if(params$X@outp_formats_chr[1] == "Word") {
     #   huxtable::set_col_width(c(.1,.1,.1,.7)) %>%
     #   huxtable::set_wrap(1, value=T)
       #huxtable::style_headers(bold = TRUE)
-    df %>%
-      kableExtra::kbl(booktabs = T,
-                      escape = F,
-                      caption = knitr::opts_current$get("tab.cap")) %>%
-      kableExtra::kable_paper(full_width = F) %>%
-      kableExtra::column_spec(1, bold=T) %>%
-      kableExtra::add_header_above(c(" ", "Project team responsibility" = 3), bold = T, italic = T) %>%
-      kableExtra::column_spec(2, width = "13em") %>%
-      kableExtra::column_spec(3, width = "13em") %>%
-      kableExtra::column_spec(4, width = "13em") %>%
-      kableExtra::collapse_rows(columns = 2, latex_hline = "none")
-      # kableExtra::column_spec(3, width = "35em") %>%
-      # kableExtra::pack_rows("Accountable - it is easy to see who developed, tested and applied a model and how they did it.",1,7) %>%
-      # kableExtra::pack_rows("Updatable - a model and its components are maintained and continuously improved.",17,20) %>%
-      # # kableExtra::pack_rows("Modular - models and their components can be combined to extend their scope",11,12) %>%
-      # # kableExtra::pack_rows("Epitomising - model code can be re-used in other decision contexts",13,15) %>%
-      # kableExtra::pack_rows("Reusable - a model and its components can be used in other models and by other modellers.",8,16) #%>%
-      # kableExtra::pack_rows("Yielding - a model can be simply, flexibly and reliably used as a decision aid",19,20)
+    # df %>%
+    #   kableExtra::kbl(booktabs = T,
+    #                   escape = F,
+    #                   caption = knitr::opts_current$get("tab.cap")) %>%
+    #   kableExtra::kable_paper(full_width = F) %>%
+    #   kableExtra::column_spec(1, bold=T) %>%
+    #   kableExtra::add_header_above(c(" ", "Project team responsibility" = 3), bold = T, italic = T) %>%
+    #   kableExtra::column_spec(2, width = "13em") %>%
+    #   kableExtra::column_spec(3, width = "13em") %>%
+    #   kableExtra::column_spec(4, width = "13em") %>%
+    #   kableExtra::collapse_rows(columns = 2, latex_hline = "none")
+
     }
 ```
