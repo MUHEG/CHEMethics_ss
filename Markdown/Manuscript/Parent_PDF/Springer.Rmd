@@ -16,8 +16,8 @@ classoptions:
   # - lineno        # Optional: Add line numbers
   # - iicol         # Optional: Double column layour
 
-title: Identifying and assessing ethical risks when implementing health economic models as software
-titlerunning: Ethical computational modelling
+title: "Ethical considerations when planning, implementing and releasing health economic model software: a new proposal"
+titlerunning: Ethical modelling software
 
 # authors:
 #   - name: Matthew P Hamilton
@@ -150,7 +150,7 @@ affiliations:
   - number: 3
     corresponding: FALSE
     info:
-#      orgdiv: XXXXXXXXXXX
+      orgdiv: Flinders Health and Medical Research Institute
       orgname: Flinders University   
     address:
     #     # street: "182 Victoria Square"     
@@ -206,7 +206,7 @@ affiliations:
   - number: 5
     corresponding: FALSE
     info:
-#      orgdiv: XXXXXXXXXXX
+      orgdiv: Health Research Institute
       orgname: University of Canberra  
     address:
     #     # street: "182 Victoria Square"     
@@ -283,6 +283,23 @@ header-includes: |
   \usepackage[normalem]{ulem}
   \usepackage{threeparttablex}
   \usepackage{makecell}
+  \usepackage{array}
+  \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+  \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+  \newcolumntype{N}{@{}m{0pt}@{}}
+  \usepackage{caption}
+  \usepackage{graphicx}
+  \usepackage{siunitx}
+  \usepackage{hhline}
+  \usepackage{calc}
+  \usepackage{tabularx}
+  \renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
+
+  \usepackage{threeparttable}
+  \usepackage{wrapfig}
+  \usepackage{adjustbox}
+  \usepackage{hyperref}
+  
 
 # output: rticles::springer_article
 output: 

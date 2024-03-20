@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 <!-- Important rewordings --> 
-In this paper, we <!--  MOVED_EDITED_START -->draw on our prior experience with developing and using CHEMs and consider literature on modelling practice to propose<!--  MOVED_EDITED_END -->:  (i) a set of research ethics <!--  EDITED_Start responsibilities-->goals<!--  _EDITED_END --> for CHEM <!--  EDIT -->developers and funders<!--  /EDIT --<!-- and criteria for assessing ethical CHEM implementations -->;<!--  MOVED_EDITED_START --> (ii) attributes of CHEMs that suggest achievement of these goals; and (iii) criteria against which these attributes can be assessed.  <!--  MOVED_EDITED_END -->  
+In this paper, we <!--  MOVED_EDITED_START -->draw on our experience with developing and using CHEMs and consider literature on modelling and software development practice to propose<!--  MOVED_EDITED_END -->:  (i) an initial set of research ethics <!--  EDITED_Start responsibilities-->goals<!--  _EDITED_END --> for CHEM <!--  EDIT -->developers and funders<!--  /EDIT --<!-- and criteria for assessing ethical CHEM implementations -->;<!--  MOVED_EDITED_START --> (ii) attributes of CHEMs that suggest achievement of these goals; and (iii) criteria against which these attributes can be assessed.  <!--  MOVED_EDITED_END -->  
 <!-- (i) some core ethical responsibilities of CHEM project teams; 
 
  <!-- --> 

@@ -13,7 +13,7 @@ X <- Ready4showSynopsis(#background_1L_chr = "Our study is entirely fictional.",
                         keywords_chr = c("computational models", "ethics of modelling", "health economics", "open-source models"),
                         outp_formats_chr = "PDF",
                         #sample_desc_1L_chr = "The study sample is fake data that pretends to be young people aged 12 to 25 years who attended Australian primary care services for mental health related needs between November 2019 to August 2020.",
-                        title_1L_chr = "Identifying and assessing ethical risks when implementing health economic models as software")
+                        title_1L_chr = "Ethical considerations when planning, implementing and releasing health economic model software - a new proposal")
 X <- renewSlot(X,
                "authors_r3", 
                {
@@ -40,11 +40,10 @@ X <- renewSlot(X,
                  args_ls$abstract_ls <- list(Summary = "Most health economic analyses are undertaken with the aid of computers. However, the research ethics of implementing health economic models as software (or computational health economic models (CHEMs)) are poorly understood. 
                                                         We propose that developers and funders of CHEMs should adhere to research ethics principles and pursue the goals of: (i) socially acceptable user requirements and design specifications; (ii) fit for purpose implementations; and (iii) socially beneficial post-release use. 
                                                         We further propose that a transparent (T), reusable (R) and updatable (U) CHEM is suggestive of a project team that has largely met these goals.
-                                                        We propose six criteria for assessing TRU CHEMs: (T1) software files are open access; (T2) developer contributions and judgments on appropriate use are easily identified; 
-                                                        (R1) programming practices promote selective reuse; (R2) licenses permit reuse and derivative works; (U1) maintenance infrastructure is in place; and 
+                                                        We propose six criteria for assessing TRU CHEMs: (T1) software files are publicly available; (T2) developer contributions and judgments on appropriate use are easily identified; 
+                                                        (R1) programming practices promote subcomponent reuse; (R2) licenses permit reuse and derivative works; (U1) maintenance infrastructure is in place; and 
                                                         (U2) releases are systematically retested and deprecated.
-                                                        Few existing CHEMs would meet all TRU criteria. Addressing these limitations will require changes to the work practices, funding and tools that underpin health economic model development.
-                                                        Priority actions include the development of new and updated good practice guidelines and research infrastructure and human capital investments."
+                                                        Few existing CHEMs would meet all TRU criteria. Addressing these limitations will require the development of new and updated good practice guidelines and investments by governments and other research funders in enabling infrastructure and human capital."
                                              # ,
                                              # Objectives = "We aimed to develop a conceptual and technical framework for implementing open-source mental health systems models and illustrate how it can be applicatied to economic topics in youth mental health.",
                                              # Methods = "We created a software development kit in R to support standardised implementation of mental health systems models. As a worked example, we applied the toolkit to develop open-source youth mental health utility mapping models, which we assessed against five principles using 17 standards.",

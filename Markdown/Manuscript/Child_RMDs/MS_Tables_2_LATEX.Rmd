@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+output:
+  pdf_document: default
+  html_document: default
+date: "2024-03-20"
+---
+
+\begin{table}
+\centering
+\caption{\label{tab:timelygls}Transparent, reusable and updatable (TRU) computational health economic models (CHEMs) are suggestive of ethical modelling practice}
+\centering
+\begin{tabularx}{14cm}{|l|X|X|X|}
+\toprule
+  & \textbf{Social acceptability} & \textbf{Fitness for purpose} & \textbf{Beneficial use}\\
+\midrule
+\textbf{Transparent} & \multicolumn{2}{>{\hsize=\dimexpr 2\hsize+2\tabcolsep+\arrayrulewidth}X|}{\centering Modeller judgments, model features and verification checks can be reviewed by third parties.}  & Decision-makers can understand the strengths and weakness of models before applying them.\\[20pt] \cmidrule(l{7mm}r{7mm}){2-4}
+
+\textbf{Reusable} & \multirow{2}{3cm}{\centering Models can be modified to reflect alternative value judgments.} & Third party use increases likelihood of errors being identified. & Can inform more decision problems, in more contexts with less duplicative effort.\\[20pt] \cmidrule(l{7mm}r{7mm}){3-4}
+
+\textbf{Updatable} & & \multicolumn{2}{>{\hsize=\dimexpr 2\hsize+2\tabcolsep+\arrayrulewidth}X|}{\centering Models can be validly used for longer.}  \\[20pt]
+\bottomrule
+\end{tabularx}
+\end{table}
+
+

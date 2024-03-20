@@ -10,7 +10,7 @@ output: html_document
 library(kableExtra)  
 df <- data.frame(Criterion = c("T1 Software files are open access", 
                                "T2 Developer contributions and judgments on appropriate use are easily identified", 
-                               "R1 Programming practices promote selective reuse",
+                               "R1 Programming practices promote subcomponent reuse",
                                "R2 Licenses permit reuse and derivative works",
                                "U1 Maintenance infrastructure is in place",
                                "U2 Releases are systematically retested and deprecated"),

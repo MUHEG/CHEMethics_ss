@@ -1,0 +1,231 @@
+---
+output:
+  bookdown::pdf_book:
+    base_format: rticles::springer_article
+    # includes:
+    #   in_header: preamble.tex
+    keep_tex: true
+#     pandoc_args: 
+#       - '--lua-filter=../Filters/scholarly-metadata.lua'
+#       - '--lua-filter=../Filters/author-info-blocks.lua'
+classoptions: 
+  - sn-vancouver      
+  - Numbered      # Optional: Use numbered references instead of namedate references (only for sn-nature, sn-basic, sn-vancouver, sn-chicago, sn-mathphys or sn-nature)
+  # - referee       # Optional: Use double line spacing 
+  # - lineno        # Optional: Add line numbers
+  # - iicol         # Optional: Double column layour
+
+title: Identifying and assessing ethical risks when implementing health economic models as software
+titlerunning: Ethical computational modelling
+
+authors: 
+  - firstname: Matthew
+    particle: P 
+    lastname: Hamilton
+    email: matthew.hamilton1@monash.edu
+    affiliation: [1,2]
+    corresponding: TRUE
+  - firstname: Caroline
+    lastname: Gao
+    affiliation: [2,4,1]
+
+  - firstname: Jonathan  
+    lastname: Karnon
+    affiliation: [3]
+
+  - firstname: Luis  
+    lastname: Salvador-Carulla
+    affiliation: [5]   
+    
+
+  - firstname: Sue
+    particle: M
+    lastname: Cotton
+    affiliation: [2,4]
+
+  - firstname: Cathrine
+    lastname: Mihalopoulos
+    affiliation: [1]   
+    
+affiliations:
+  - number: 1
+    corresponding: TRUE
+    info:
+      orgdiv: School of Public Health and Preventive Medicine
+      orgname: Monash University
+    address:
+        city: Melbourne
+        country: Australia
+  - number: 2
+    corresponding: FALSE
+    info:
+      orgname: Orygen
+    address:
+        city: Parkville
+        country: Australia
+  - number: 3
+    corresponding: FALSE
+    info:
+      orgname: Flinders University   
+    address:
+        city: Adelaide
+        country: Australia 
+  - number: 4
+    corresponding: FALSE
+    info:
+      orgdiv: Centre for Youth Mental Health
+      orgname: The University of Melbourne
+    address:
+        city: Parkville
+        country: Australia
+
+  - number: 5
+    corresponding: FALSE
+    info:
+#      orgdiv: XXXXXXXXXXX
+      orgname: University of Canberra  
+    address:
+    #     # street: "182 Victoria Square"     
+        city: Canberra
+    #     postcode: 5000
+    #  #   state: South Australia
+        country: Australia 
+keywords:  
+  - computational models
+  - ethics of modelling
+  - health economics
+  - open-source models
+  
+pacs: 
+  jel:
+    - "C63"
+    - "C88"
+    - "I10"
+  msc:
+    - "91-08"
+# title: "REPLACE ME"
+params:
+  X: null
+abstract: TO BE REPLACED
+# output: 
+#   pdf_document:
+#     keep_tex: true
+graphics: true
+header-includes: |
+  %% Per the spinger doc, new theorem styles can be included using built in style, 
+  %% but it seems the don't work so commented below
+  %\theoremstyle{thmstyleone}%
+  \newtheorem{theorem}{Theorem}%  meant for continuous numbers
+  %%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+  %% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+  \newtheorem{proposition}[theorem]{Proposition}%
+  %%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+  %% \theoremstyle{thmstyletwo}%
+  \theoremstyle{remark}
+  \newtheorem{example}{Example}%
+  \newtheorem{remark}{Remark}%
+
+  %% \theoremstyle{thmstylethree}%
+  \theoremstyle{definition}
+  \newtheorem{definition}{Definition}%
+  
+  \usepackage{float}
+  \let\origfigure\figure
+  \let\endorigfigure\endfigure
+  \renewenvironment{figure}[1][2] {
+      \expandafter\origfigure\expandafter[H]
+  } {
+      \endorigfigure
+  }
+  \usepackage{lscape}
+  \usepackage{pdflscape}
+  \newcommand{\blandscape}{\begin{landscape}}
+  \newcommand{\elandscape}{\end{landscape}}
+  \usepackage[none]{hyphenat}
+  \usepackage[export]{adjustbox}
+  \usepackage{multirow}
+  \usepackage{longtable}
+  \usepackage{array}
+  \usepackage{wrapfig}
+  \usepackage{colortbl}
+  \usepackage{booktabs} 
+  \usepackage{colortbl}
+  \usepackage{pdflscape}
+  \usepackage{tabu}
+  \usepackage{threeparttable}
+  \usepackage[normalem]{ulem}
+  \usepackage{threeparttablex}
+  \usepackage{makecell}
+  \expandafter\def\csname
+  ver@l3backend.sty\endcsname{}
+---
+
+```{r echo = F}
+## NOTE: EDITED TEMPLATE FILE To Add rotating and multirow packages as per:
+# https://stackoverflow.com/questions/31503418/how-to-add-a-latex-package-to-r-journal-template-from-rticle-package-in-r
+library(ready4show)
+options(tinytex.verbose = TRUE)
+# library(xtable)
+# options(xtable.floating = FALSE)
+# options(xtable.timestamp = "")
+```
+```{r}
+params_ls <- list(X = ready4show::Ready4showSynopsis())
+```
+
+```{r timelygls, tab.cap='Transparent, reusable and updatable (TRU) computational health economic models (CHEMs) are suggestive of ethical modelling practice', tab.id = 'timelygls', echo = F, results = 'asis', warning=FALSE, message=FALSE}
+library(kableExtra)  
+df <- data.frame(` ` = c("Transparent", "Reusable", "Updatable", "Blank"),
+                 `Social acceptability` = c("Modeller judgments, model features and verification checks can be reviewed by third parties.",
+                                                                        "Models can be modified to reflect alternative value judgments.",
+                                                                        "",#"Models can be modified to reflect alternative value judgments.",
+                                            "XXXXXXXXXXXXXXXXX"
+                                            ),
+                 `Fitness for purpose` = c("",#"Modeller judgments, model features and verification checks can be reviewed by third parties.",
+                                           "Third party use increases likelihood of errors being identified.",
+                                           "Models can be validly used for longer.",
+                                           "XXXXXXXXXXXXXXXXX"),
+                 `Beneficial use` = c("Decision-makers can understand the strengths and weakness of models before applying them.",
+                                      "Can inform more decision problems, in more contexts with less duplicative effort.",
+                                      "",#"Models can be validly used for longer."
+                                      "XXXXXXXXXXXXXXXXX"),
+                 #Blank = c(rep("XXXXXXXXXXXXXXXXXXXXXXXXXXXX",3)),
+                 check.names = F)
+ library("flextable")
+  library("ftExtra")
+if(params_ls$X@outp_formats_chr[1] == "Word") {
+
+  df %>%
+    ready4show::print_table(output_type_1L_chr = params_ls$X@outp_formats_chr[1],
+                            caption_1L_chr = knitr::opts_current$get("tab.cap"),
+                            mkdn_tbl_ref_1L_chr = paste0("tab:",knitr::opts_current$get("tab.id")),
+                            use_rdocx_1L_lgl = ifelse(params_ls$X@outp_formats_chr[1]=="Word",T,F),
+                            add_to_row_ls = NULL,
+                            sanitize_fn = NULL) %>%
+    ftExtra::colformat_md()
+  }else{
+    # library(huxtable)
+    # library(gt)
+    # library(dplyr)
+   #flextable::set_flextable_defaults() #fonts_ignore=TRUE
+   flextable::flextable(df) %>%
+   flextable::border_inner(border = officer::fp_border(style = "none")) %>%
+   flextable::border_outer() %>%
+   flextable::align(align = "center", part = "header") %>%
+   #flextable::padding(j=2:4, part = "all", padding.top = 40, padding.bottom = 40) %>%
+   # flextable::merge_h() %>%
+   # flextable::merge_v() %>%
+   flextable::align(j=2:4, align = "center") %>%
+   flextable::bold(j=1, part = "all") %>%
+   flextable::bold(part = "header") %>%
+   flextable::height(i = 1:3, height = 1.2) %>%
+   flextable::hrule(rule = "exact", part = "body") %>% 
+   flextable::width(j = 1, width = 1) %>%
+   flextable::width(j = 2:4, width = 1.8) %>%
+   flextable::merge_at(i=1,j=2:3) %>%
+   flextable::merge_at(i=2:4,j=2) %>%
+   flextable::merge_at(i=3:4,j=1) %>%
+   flextable::merge_at(i=3:4,j=3:4)  
+    }
+```
