@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  20 MAR 2024 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.20)  25 MAR 2024 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -838,21 +838,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 {c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 196.
 
-Underfull \hbox (badness 3168) in paragraph at lines 202--203
-\OT1/cmr/m/n/10 such as Python [[]] or R [[]]. Train-ing and pro-fes-sional prac-tice guid-ance
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 202--203
-\OT1/cmr/m/n/10 for health economists typ-i-cally pro-vide only super-fi-cially cov-er-age of soft-ware
- []
-
-
-Underfull \hbox (badness 2096) in paragraph at lines 204--205
-\OT1/cmr/m/n/10 recent devel-op-ments in LLMs mean soft-ware devel-op-ers may con-front novel
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [2]
@@ -982,20 +967,20 @@ Underfull \hbox (badness 1337) in paragraph at lines 41--44
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [10]
-Underfull \hbox (badness 1953) in paragraph at lines 126--130
+Underfull \hbox (badness 1953) in paragraph at lines 121--125
 []\OT1/cmr/m/n/10 Ghabri S, Steven-son M, M^^?oller J, Caro JJ.  Trust-ing the Results of
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 132--135
+[]\OT1/cmr/m/n/10 Haji Ali Afzali H, Gray J, Karnon J.  Model per-for-mance eval-u-a-tion
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [11]
-Underfull \hbox (badness 1859) in paragraph at lines 137--140
-[]\OT1/cmr/m/n/10 Haji Ali Afzali H, Gray J, Karnon J.  Model per-for-mance eval-u-a-tion
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 166--170
+Underfull \hbox (badness 3838) in paragraph at lines 161--165
 []\OT1/cmr/m/n/10 Arnold RJG, Ekins S.  Time for Coop-er-a-tion in Health Eco-nomics
  []
 
@@ -1013,9 +998,6 @@ Underfull \hbox (badness 1337) in paragraph at lines 246--250
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[13]
 Underfull \hbox (badness 1107) in paragraph at lines 258--262
 []\OT1/cmr/m/n/10 Shahin M, Ali Babar M, Zhu L.  Con-tin-u-ous Inte-gra-tion, Deliv-ery and
  []
@@ -1026,6 +1008,9 @@ Underfull \hbox (badness 1147) in paragraph at lines 258--262
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[13]
 Underfull \hbox (badness 2790) in paragraph at lines 281--285
 []\OT1/cmr/m/n/10 Wu EQ, Zhou ZY, Xie J, Met-allo C, Thokala P.  Trans-parency in
  []
@@ -1052,12 +1037,12 @@ Here is how much of TeX's memory you used:
  42689 multiletter control sequences out of 15000+600000
  574979 words of font info for 106 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 90i,15n,117p,1743b,1134s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,15n,117p,1743b,1136s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/Users/mham0053/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Submission.pdf (14 pages, 199775 bytes).
+Output written on Submission.pdf (14 pages, 199553 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
+ 391 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
  97 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

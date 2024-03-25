@@ -12,7 +12,7 @@ df <- data.frame(Attribute = c(rep("Transparent",2), rep("Reusable",2), rep("Upd
                  Item = c("T","R","U") %>% purrr::map(~paste0(.x,1:2)) %>% purrr::flatten_chr(),
                  Criterion = c("Software files (executable code, testing procedures and outcomes and non-confidential data) are publicly available.",
                                "It is easy to see who funded, developed and tested each part of the CHEM and to identify the modelling team’s assumptions, judgments and theories about CHEM development and use.",
-                               "Programming practices facilitate selective reuse of model sub-components.",
+                               "Programming practices facilitate independent reuse of model components.",
                                "Licenses allow anyone to ethically reuse model code and non-confidential data, in whole or in part, without charge, and for purposes that include the creation of derivative works.",
                                "Maintenance infrastructure is in place to support version control and collaboration with model users.",
                                "Each new release of a CHEM is systematically retested, with changes implemented to minimise disruptions for existing model users."))

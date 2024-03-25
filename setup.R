@@ -41,7 +41,7 @@ X <- renewSlot(X,
                                                         We propose that developers and funders of CHEMs should adhere to research ethics principles and pursue the goals of: (i) socially acceptable user requirements and design specifications; (ii) fit for purpose implementations; and (iii) socially beneficial post-release use. 
                                                         We further propose that a transparent (T), reusable (R) and updatable (U) CHEM is suggestive of a project team that has largely met these goals.
                                                         We propose six criteria for assessing TRU CHEMs: (T1) software files are publicly available; (T2) developer contributions and judgments on appropriate use are easily identified; 
-                                                        (R1) programming practices promote subcomponent reuse; (R2) licenses permit reuse and derivative works; (U1) maintenance infrastructure is in place; and 
+                                                        (R1) programming practices facilitate independent reuse of model components; (R2) licenses permit reuse and derivative works; (U1) maintenance infrastructure is in place; and 
                                                         (U2) releases are systematically retested and deprecated.
                                                         Few existing CHEMs would meet all TRU criteria. Addressing these limitations will require the development of new and updated good practice guidelines and investments by governments and other research funders in enabling infrastructure and human capital."
                                              # ,
